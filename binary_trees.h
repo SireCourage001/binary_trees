@@ -1,9 +1,9 @@
 #ifndef BINARY_TREES_H
 #define BINARY_TREES_H
 
+#include <stddef.h>
 #include <stdio.h>
 #include <string.h>
-#include <stddef.h>
 #include <stdlib.h>
 
 /**
@@ -22,8 +22,8 @@ struct binary_tree_s
 	struct binary_tree_s *right;
 }
 
-typedef struct binary_tree_s binary_tree_t;/*Binary Search Tree*/
-typedef struct binary_tree_s bst_t;/*Binary Search Tree*/
+typedef struct binary_tree_s binary_tree_t;
+typedef struct binary_tree_s bst_t;
 typedef struct binary_tree_s avl_t;/*AVL Tree*/
 typedef struct binary_tree_s heap_t;/*Max Heap Binary*/
 
@@ -49,4 +49,4 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 binary_tree_t *sibling(binary_tree_t *node);
 
-#endif
+#endiif
